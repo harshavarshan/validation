@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects</title>
+</head>
+<body>
+	<script>
+		function isError (input) {
+return input instanceof Error || toString.call(input) === '[object Error]';
+}
+
+console.log(isError(new Error('WhoopS! This is not good!')));
+console.log(isError(45));
+  
+</script>
+</body>
+</html>
